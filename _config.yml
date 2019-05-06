@@ -6,10 +6,10 @@ url: https://testall0836.github.io
 resume_site: https://github.com/testall0836/
 github: https://github.com/testall0836/
 baseurl:
-description: Actually, less is more!
+description: 한결같이 꾸준하게
 meta_description: 반갑습니다.
-motto: It's our wits that make us men.
-banner: 테스트1，테스트2
+motto: 언제나 웃음과 함께
+banner: 지금 찾지 않으면 앞으로도 찾지 않을 겁니다.
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
