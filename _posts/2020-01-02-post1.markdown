@@ -1,13 +1,7 @@
 ---
 layout: post
 title: post-sample
-date: 2020-01-02 19:20:23 +0900
-category: sample
+date: 2022-02-05 19:20:23 +0900
+categories: sample
 ---
-# post-sample
-> Hello!
-
-This is code
-```ruby
-print 'hello world'
-```
+# 초기 포스팅
