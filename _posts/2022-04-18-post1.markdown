@@ -1,0 +1,12 @@
+---
+layout: post
+title: grep 을 이용한 문자열 검색
+date: 2022-04-18 23:00:23 +0900
+categories: linux
+---
+
+## 명령어 사용법
+> grep [옵션] 패턴 [파일명]
+
+## 옵션 사용
+> -E    : PATTERN 을 확장 정규 표현식으로 해석
