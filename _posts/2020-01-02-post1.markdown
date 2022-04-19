@@ -1,7 +1,0 @@
----
-layout: post
-title: post-sample
-date: 2022-02-05 19:20:23 +0900
-categories: sample
----
-# 초기 포스팅
