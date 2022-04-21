@@ -26,9 +26,6 @@ grep [옵션] [패턴] [파일명]
 | -C[n]     |      [n] 값은 숫자, 매칭된 라인 앞, 뒤의 n개의 라인 출력  |
 
 
-#
-
-
 ## FILE1.TXT 파일에서 STR 문자열 검색
 ```
 $ grep "STR" FILE1.TXT
@@ -44,4 +41,3 @@ $ grep "STR" *
 $ grep -w "information" FILE.txt
 this is not information
 ```
-
