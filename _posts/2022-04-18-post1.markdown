@@ -41,3 +41,9 @@ $ grep "STR" *
 $ grep -w "information" FILE.txt
 this is not information
 ```
+
+## /etc/passwd 파일 내에서 dong 문자열 일치 항목 개수 출력
+```
+grep -c 'dong' /etc/passwd
+4
+```
