@@ -53,3 +53,9 @@ $ grep -c 'dong' /etc/passwd
 $ grep "^C" FILE.txt            
 > FILE.txt 에서 C로 시작하는 라인 검색.
 ```
+
+## 정규식 패턴으로 검색
+```         
+$ grep 'a.....e' FILE.txt
+> FILE.txt 에서 a로 시작하고 e로 끝나는 7자리 단어를 검색.
+```
