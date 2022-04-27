@@ -1,0 +1,6 @@
+---
+layout: post
+title: XSS(Cross Site Scripting) 공격기법
+date: 2022-04-27 23:00:23 +0900
+categories: XSS WEB
+---
