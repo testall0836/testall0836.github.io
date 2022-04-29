@@ -2,7 +2,7 @@
 layout: post
 title: tar 명령어 사용법
 date: 2022-04-29 23:00:23 +0900
-categories: linux
+categories: command
 ---
 
 
