@@ -1,0 +1,36 @@
+---
+layout: post
+title: tar 명령어 사용법
+date: 2022-04-29 23:00:23 +0900
+categories: linux
+---
+
+
+## 압축하기
+
+```
+압축하기
+tar -cvf [압축결과파일] [압축대상파일, 띄어쓰기로 구분]
+
+tar -zcvf [압축결과파일] [압축대상파일, 띄어쓰기로 구분]
+
+ex) tar -cvf script.tar a.sql b.sql c.sql
+
+    → 현재 디렉토리에 있는 a.sql, b.sql, c.sql 를 script.tar로 압축수행
+
+        압축대상파일에 별문자(*) 사용 가능   
+```
+
+
+
+## 압축풀기
+
+```
+tar -xvf [압축파일] - C [압축풀경로]
+
+tar -zxvf [압축파일] - C [압축풀경로]
+
+ex) tar -zxvf script.tar.gz -C /home/sql/
+
+    → 현재 디렉토리에 있는 script.tar.gz 파일을 /home/sql/ 디렉토리에 압축 해제
+```
