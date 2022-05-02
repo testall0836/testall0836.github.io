@@ -4,3 +4,15 @@ title: XSS(Cross Site Scripting) 공격기법
 date: 2022-04-27 23:00:23 +0900
 categories: XSS
 ---
+
+# XSS(Cross Site Scripting) 공격이란?
+서버의 응답에 공격자가 삽입된 악성 스크립트를 받은 사용자의 웹 브라우저에서 악성 스크립트가 실행되는 공격
+
+# XSS 유형 3가지
+```
+Reflected XSS (Non-persistent XSS)
+
+Stored XSS (Persistent XSS)
+
+DOM XSS
+```
