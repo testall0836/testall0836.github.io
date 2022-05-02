@@ -6,19 +6,22 @@ categories: command linux
 ---
 
 
+## 옵션 사용
+
+| OPTION   |      기능     |
+|----------|:--------------|
+| -f        |      압축 결과의 파일명 지정             |
+| -c        |      tar 압축 생성. 기존 아카이브 덮어 쓰기 (압축 옵션)   |
+| -x        |      tar 아카이브에서 파일 추출(압축 해제 옵션)           |
+| -v        |      압축 또는 해제 시 파일 리스트 출력                   |
+| -t        |      tar 아카이브에 포함된 내용 확인                      |
+| -C        |      대상 디렉토리 경로 지정                              |
+| -p        |      퍼미션, 소유자등의 속성정보들을 그대로 유지함          |
+
 ## 압축하기
 
 ```
-압축하기
-tar -cvf [압축결과파일] [압축대상파일, 띄어쓰기로 구분]
-
-tar -zcvf [압축결과파일] [압축대상파일, 띄어쓰기로 구분]
-
-ex) tar -cvf script.tar a.sql b.sql c.sql
-
-    → 현재 디렉토리에 있는 a.sql, b.sql, c.sql 를 script.tar로 압축수행
-
-        압축대상파일에 별문자(*) 사용 가능   
+tar -cvfp [createTarName.tar] [target]
 ```
 
 
@@ -26,11 +29,5 @@ ex) tar -cvf script.tar a.sql b.sql c.sql
 ## 압축풀기
 
 ```
-tar -xvf [압축파일] - C [압축풀경로]
-
-tar -zxvf [압축파일] - C [압축풀경로]
-
-ex) tar -zxvf script.tar.gz -C /home/sql/
-
-    → 현재 디렉토리에 있는 script.tar.gz 파일을 /home/sql/ 디렉토리에 압축 해제
+tar -xvfp [target.tar]
 ```
