@@ -16,5 +16,8 @@ Reflected XSS (Non-persistent XSS)
 
 Stored XSS (Persistent XSS)
 
+공격자가 서버에 악성 스크립트를 게시글 형태로 등록시킨 후 사용자가 해당 게시물에 접근 시 스크립트가 실행되어
+피해를 발생시키는 공격 기법
+
 DOM XSS
 ```
