@@ -20,4 +20,6 @@ Stored XSS (Persistent XSS)
 피해를 발생시키는 공격 기법
 
 DOM XSS
+
+DOM Based XSS는 피해자의 브라우저에서 DOM 환경을 수정하여 클라이언트 측 코드가 예상치 못한 방식으로 공격 구문이 실행되는 XSS(Cross Site Scripting) 공격
 ```
