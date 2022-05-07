@@ -15,11 +15,11 @@ grep [옵션] [패턴] [파일명]
 
 | OPTION   |      기능     |
 |----------|:--------------|
-| -i        |      대/소문자를 구분하지 않음                            |
 | -r        |      디렉토리 내의 모든 파일에 커맨드 실행                |
+| -n        |      검색 결과 매칭된 라인 넘버를 맨 앞에 출력            |
+| -i        |      대/소문자를 구분하지 않음                            |
 | -l        |      매칭 라인과 파일 이름만 출력                         |
 | -c        |      파일 당 매칭 라인(패턴이 있는 라인)의 개수 출력      |
-| -n        |      검색 결과 매칭된 라인 넘버를 맨 앞에 출력            |
 | -w        |      PATTERN 이 단어 단위로 매칭                          |
 | -A[n]     |      [n] 값은 숫자, 매칭된 라인 뒤의 n개의 라인 출력      |
 | -B[n]     |      [n] 값은 숫자, 매칭된 라인 앞의 n개의 라인 출력      |
@@ -58,4 +58,18 @@ $ grep "^C" FILE.txt
 ```         
 $ grep 'a.....e' FILE.txt
 > FILE.txt 에서 a로 시작하고 e로 끝나는 7자리 단어를 검색.
+```
+
+## --include, --exclude 파라미터를 이용한 검색
+```         
+$ grep --include=\*.{c,o} -rnw '/nate/to/' -e "pattern"
+확장자가 c, o인 파일을 /nate/to/ 경로 하위에서 pattern 검색
+
+$ grep --exclude=*.o -rnw '/nate/to/' -e "pattern"
+확장자가 o인 것을 제외하고 검색
+
+
+$ grep --exclude-dir={dir1,dir2, .git} -rnw '/nate/to/' -e "pattern"
+dir1, dir2, .git 폴더를 제외하고 검색
+
 ```
