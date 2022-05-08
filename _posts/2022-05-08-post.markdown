@@ -1,0 +1,14 @@
+---
+layout: post
+title: tar 명령어 사용법
+date: 2022-05-08 18:00:23 +0900
+categories: command linux find
+---
+
+
+## 특정 디렉토리에 find 조건에 맞는 결과의 개수를 표시
+
+```
+$ find ./ -type f | wc -l
+4
+```
