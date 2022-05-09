@@ -12,3 +12,15 @@ categories: command linux find
 $ find ./ -type f | wc -l
 4
 ```
+
+## dong라는 이름의 디렉토리만 검색
+
+```
+$ find . -name dong -type d
+```
+
+## xlog 라는 이름의 파일만 검색
+
+```
+$ find . -name build -type f
+```
