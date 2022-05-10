@@ -22,5 +22,5 @@ $ find . -name dong -type d
 ## xlog 라는 이름의 파일만 검색
 
 ```
-$ find . -name build -type f
+$ find . -name xlog -type f
 ```
