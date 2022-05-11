@@ -24,3 +24,8 @@ $ find . -name dong -type d
 ```
 $ find . -name xlog -type f
 ```
+
+## .log 확장자를 가진 파일을 현재 디렉터리에서 검색 후 rm -f 명령을 통해 삭제
+```
+$ find -type f -name "*.log" -exec rm -f {} \;
+```
