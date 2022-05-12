@@ -29,3 +29,8 @@ $ find . -name xlog -type f
 ```
 $ find -type f -name "*.log" -exec rm -f {} \;
 ```
+
+## 수정한지 10일이 지난 log 확장자 파일을 삭제
+```
+$ find . -name "*.log" -mtime +10 -delete
+```
