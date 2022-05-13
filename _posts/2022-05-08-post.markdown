@@ -34,3 +34,8 @@ $ find -type f -name "*.log" -exec rm -f {} \;
 ```
 $ find . -name "*.log" -mtime +10 -delete
 ```
+
+## 파일 크기가 1024 바이트 초과, 2048 바이트 미만인 파일 검색
+```
+$ find . -size +1024c -size -2048c
+```
