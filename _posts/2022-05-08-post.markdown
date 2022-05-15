@@ -6,6 +6,8 @@ categories: command linux find
 ---
 
 
+
+
 ## 특정 디렉토리에 find 조건에 맞는 결과의 개수를 표시
 
 ```
@@ -38,4 +40,9 @@ $ find . -name "*.log" -mtime +10 -delete
 ## 파일 크기가 1024 바이트 초과, 2048 바이트 미만인 파일 검색
 ```
 $ find . -size +1024c -size -2048c
+```
+
+## /var/log/app, /var/an/tap 두 개의 디렉토리 에서 ".log" 확장자 파일을 검색
+```
+$ find /var/log/app /var/an/tap . -name "*.log"
 ```
