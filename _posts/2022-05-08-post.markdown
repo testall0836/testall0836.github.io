@@ -32,6 +32,12 @@ $ find . -name xlog -type f
 $ find -type f -name "*.log" -exec rm -f {} \;
 ```
 
+## 현재경로 하위에 "FILE"로 시작하는 파일/디렉토리를 검색 후 해당 파일의 내용중에 "test" 문자열을 포함하는 라인을 출력
+```
+$ find . -name "FILE*" -exec grep -i "test" {} \;
+```
+
+
 ## 수정한지 10일이 지난 log 확장자 파일을 삭제
 ```
 $ find . -name "*.log" -mtime +10 -delete
