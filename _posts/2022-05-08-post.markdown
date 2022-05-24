@@ -19,6 +19,7 @@ categories: command linux find
 | -mindepth       |      검색할 하위 디렉토리 최소 깊이 지정             |
 | -maxdepth       |      검색할 하위 디렉토리의 최대 깊이 지정             |
 | -atime       |      n일 이내에 액세스된 파일을 찾음             |
+| -ctime       |      change time 을 기준으로 파일을 찾음             |
 
 ## 특정 디렉토리에 find 조건에 맞는 결과의 개수를 표시
 
